@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question
+    url: https://github.com/Axylith/axle/discussions
+    about: Ask a question in Discussions rather than opening an issue
+  - name: Security vulnerability
+    url: https://github.com/Axylith/.github/blob/main/SECURITY.md
+    about: Report a security issue privately
