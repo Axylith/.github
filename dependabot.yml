@@ -1,0 +1,25 @@
+version: 2
+
+# Dependabot config for the org-level .github repo.
+# This repo has no workflows currently — it's just the org profile —
+# but the config is here so it's ready when we add any.
+
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      day: "monday"
+      time: "10:00"
+      timezone: "America/Edmonton"
+    open-pull-requests-limit: 3
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    groups:
+      actions:
+        patterns:
+          - "*"
